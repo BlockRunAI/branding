@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlockRun.ai Brand Kit</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+            background: #09090b;
+            color: #fafafa;
+            padding: 60px;
+            min-height: 100vh;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: -1px;
+        }
+        .subtitle {
+            color: #71717a;
+            margin-bottom: 60px;
+        }
+        .section {
+            margin-bottom: 80px;
+        }
+        .section-title {
+            font-size: 0.7rem;
+            color: #3b82f6;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+        .card {
+            background: #18181b;
+            border: 1px solid #27272a;
+            border-radius: 20px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+        .card.light {
+            background: #ffffff;
+            border-color: #e4e4e7;
+        }
+        .card.dark {
+            background: #000000;
+        }
+        .card.blue {
+            background: #2563EB;
+        }
+        .logo-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card-label {
+            font-size: 0.65rem;
+            color: #71717a;
+            letter-spacing: 1px;
+        }
+        .card.light .card-label {
+            color: #52525b;
+        }
+        .download-btn {
+            background: #2563EB;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .download-btn:hover {
+            background: #1d4ed8;
+        }
+        .sizes-row {
+            display: flex;
+            align-items: flex-end;
+            gap: 40px;
+        }
+        .size-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+        .color-info {
+            display: flex;
+            gap: 40px;
+            margin-top: 20px;
+        }
+        .color-swatch {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .swatch {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            border: 1px solid #27272a;
+        }
+        .color-text {
+            font-size: 0.85rem;
+        }
+        .color-hex {
+            color: #71717a;
+            font-family: monospace;
+        }
+        .divider {
+            height: 1px;
+            background: #27272a;
+            margin: 60px 0;
+        }
+        footer {
+            text-align: center;
+            color: #3f3f46;
+            padding-top: 40px;
+        }
+        .usage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+        }
+        .usage-card {
+            background: #18181b;
+            border: 1px solid #27272a;
+            border-radius: 16px;
+            padding: 24px;
+        }
+        .usage-title {
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        .usage-desc {
+            font-size: 0.8rem;
+            color: #71717a;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>BlockRun.ai</h1>
+    <p class="subtitle">Brand Kit — Speed Block Logo</p>
+
+    <!-- PRIMARY LOGO -->
+    <div class="section">
+        <h2 class="section-title">Primary Logo</h2>
+        <div class="grid">
+            <div class="card light">
+                <div class="logo-box">
+                    <svg id="logo-primary-black" width="200" height="200" viewBox="0 0 100 100" fill="none">
+                        <rect x="30" y="20" width="55" height="60" rx="14" stroke="#000000" stroke-width="8" fill="none"/>
+                        <path d="M15 35 L25 35" stroke="#000000" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M10 50 L25 50" stroke="#000000" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M15 65 L25 65" stroke="#000000" stroke-width="6" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <span class="card-label">PRIMARY BLACK</span>
+                <button class="download-btn" onclick="downloadSVG('logo-primary-black', 'blockrun-logo-black')">Download SVG</button>
+            </div>
+            <div class="card dark">
+                <div class="logo-box">
+                    <svg id="logo-primary-white" width="200" height="200" viewBox="0 0 100 100" fill="none">
+                        <rect x="30" y="20" width="55" height="60" rx="14" stroke="#FFFFFF" stroke-width="8" fill="none"/>
+                        <path d="M15 35 L25 35" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M10 50 L25 50" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M15 65 L25 65" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <span class="card-label" style="color:#71717a;">PRIMARY WHITE</span>
+                <button class="download-btn" onclick="downloadSVG('logo-primary-white', 'blockrun-logo-white')">Download SVG</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECONDARY LOGO (BLUE) -->
+    <div class="section">
+        <h2 class="section-title">Secondary Logo</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="logo-box">
+                    <svg id="logo-secondary-blue" width="200" height="200" viewBox="0 0 100 100" fill="none">
+                        <rect x="30" y="20" width="55" height="60" rx="14" stroke="#2563EB" stroke-width="8" fill="none"/>
+                        <path d="M15 35 L25 35" stroke="#2563EB" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M10 50 L25 50" stroke="#2563EB" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M15 65 L25 65" stroke="#2563EB" stroke-width="6" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <span class="card-label">SECONDARY BLUE</span>
+                <button class="download-btn" onclick="downloadSVG('logo-secondary-blue', 'blockrun-logo-blue')">Download SVG</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SIZES -->
+    <div class="section">
+        <h2 class="section-title">Size Variants</h2>
+        <div class="card light" style="width: 100%;">
+            <div class="sizes-row">
+                <div class="size-item">
+                    <svg width="512" height="512" viewBox="0 0 100 100" fill="none" id="size-512">
+                        <rect x="30" y="20" width="55" height="60" rx="14" stroke="#000000" stroke-width="8" fill="none"/>
+                        <path d="M15 35 L25 35" stroke="#000000" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M10 50 L25 50" stroke="#000000" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M15 65 L25 65" stroke="#000000" stroke-width="6" stroke-linecap="round"/>
+                    </svg>
+                    <span class="card-label">512px</span>
+                    <button class="download-btn" onclick="downloadPNG('size-512', 512, 'blockrun-512')">PNG</button>
+                </div>
+                <div class="size-item">
+                    <svg width="256" height="256" viewBox="0 0 100 100" fill="none" id="size-256">
+                        <rect x="30" y="20" width="55" height="60" rx="14" stroke="#000000" stroke-width="8" fill="none"/>
+                        <path d="M15 35 L25 35" stroke="#000000" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M10 50 L25 50" stroke="#000000" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M15 65 L25 65" stroke="#000000" stroke-width="6" stroke-linecap="round"/>
+                    </svg>
+                    <span class="card-label">256px</span>
+                    <button class="download-btn" onclick="downloadPNG('size-256', 256, 'blockrun-256')">PNG</button>
+                </div>
+                <div class="size-item">
+                    <svg width="128" height="128" viewBox="0 0 100 100" fill="none" id="size-128">
+                        <rect x="30" y="20" width="55" height="60" rx="14" stroke="#000000" stroke-width="8" fill="none"/>
+                        <path d="M15 35 L25 35" stroke="#000000" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M10 50 L25 50" stroke="#000000" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M15 65 L25 65" stroke="#000000" stroke-width="6" stroke-linecap="round"/>
+                    </svg>
+                    <span class="card-label">128px</span>
+                    <button class="download-btn" onclick="downloadPNG('size-128', 128, 'blockrun-128')">PNG</button>
+                </div>
+                <div class="size-item">
+                    <svg width="64" height="64" viewBox="0 0 100 100" fill="none" id="size-64">
+                        <rect x="30" y="20" width="55" height="60" rx="14" stroke="#000000" stroke-width="10" fill="none"/>
+                        <path d="M15 35 L25 35" stroke="#000000" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M10 50 L25 50" stroke="#000000" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M15 65 L25 65" stroke="#000000" stroke-width="8" stroke-linecap="round"/>
+                    </svg>
+                    <span class="card-label">64px</span>
+                    <button class="download-btn" onclick="downloadPNG('size-64', 64, 'blockrun-64')">PNG</button>
+                </div>
+                <div class="size-item">
+                    <svg width="32" height="32" viewBox="0 0 100 100" fill="none" id="size-32">
+                        <rect x="28" y="18" width="60" height="64" rx="16" stroke="#000000" stroke-width="14" fill="none"/>
+                        <path d="M8 50 L22 50" stroke="#000000" stroke-width="10" stroke-linecap="round"/>
+                    </svg>
+                    <span class="card-label">32px</span>
+                    <button class="download-btn" onclick="downloadPNG('size-32', 32, 'blockrun-32')">PNG</button>
+                </div>
+                <div class="size-item">
+                    <svg width="16" height="16" viewBox="0 0 100 100" fill="none" id="size-16">
+                        <rect x="25" y="15" width="65" height="70" rx="18" stroke="#000000" stroke-width="18" fill="none"/>
+                    </svg>
+                    <span class="card-label">16px</span>
+                    <button class="download-btn" onclick="downloadPNG('size-16', 16, 'blockrun-16')">PNG</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- BACKGROUND VARIANTS -->
+    <div class="section">
+        <h2 class="section-title">Background Variants</h2>
+        <div class="grid">
+            <!-- White on Dark -->
+            <div class="card dark">
+                <div class="logo-box">
+                    <svg width="120" height="120" viewBox="0 0 100 100" fill="none" id="logo-white-dark">
+                        <rect x="30" y="20" width="55" height="60" rx="14" stroke="#FFFFFF" stroke-width="8" fill="none"/>
+                        <path d="M15 35 L25 35" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M10 50 L25 50" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M15 65 L25 65" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <span class="card-label" style="color:#71717a;">WHITE ON BLACK</span>
+                <button class="download-btn" onclick="downloadPNGWithBg('logo-white-dark', 512, 'blockrun-white-on-black', '#000000')">PNG</button>
+            </div>
+
+            <!-- Black on Light -->
+            <div class="card light">
+                <div class="logo-box">
+                    <svg width="120" height="120" viewBox="0 0 100 100" fill="none" id="logo-black-light">
+                        <rect x="30" y="20" width="55" height="60" rx="14" stroke="#000000" stroke-width="8" fill="none"/>
+                        <path d="M15 35 L25 35" stroke="#000000" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M10 50 L25 50" stroke="#000000" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M15 65 L25 65" stroke="#000000" stroke-width="6" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <span class="card-label">BLACK ON WHITE</span>
+                <button class="download-btn" onclick="downloadPNGWithBg('logo-black-light', 512, 'blockrun-black-on-white', '#FFFFFF')">PNG</button>
+            </div>
+
+            <!-- White on Blue -->
+            <div class="card blue">
+                <div class="logo-box">
+                    <svg width="120" height="120" viewBox="0 0 100 100" fill="none" id="logo-white-blue">
+                        <rect x="30" y="20" width="55" height="60" rx="14" stroke="#FFFFFF" stroke-width="8" fill="none"/>
+                        <path d="M15 35 L25 35" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M10 50 L25 50" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M15 65 L25 65" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <span class="card-label" style="color:rgba(255,255,255,0.7);">WHITE ON BLUE</span>
+                <button class="download-btn" style="background:#fff;color:#2563EB;" onclick="downloadPNGWithBg('logo-white-blue', 512, 'blockrun-white-on-blue', '#2563EB')">PNG</button>
+            </div>
+
+            <!-- Transparent -->
+            <div class="card" style="background: repeating-conic-gradient(#27272a 0% 25%, #18181b 0% 50%) 50% / 20px 20px;">
+                <div class="logo-box">
+                    <svg width="120" height="120" viewBox="0 0 100 100" fill="none" id="logo-transparent">
+                        <rect x="30" y="20" width="55" height="60" rx="14" stroke="#2563EB" stroke-width="8" fill="none"/>
+                        <path d="M15 35 L25 35" stroke="#2563EB" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M10 50 L25 50" stroke="#2563EB" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M15 65 L25 65" stroke="#2563EB" stroke-width="6" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <span class="card-label">TRANSPARENT</span>
+                <button class="download-btn" onclick="downloadPNG('logo-transparent', 512, 'blockrun-transparent')">PNG</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- FAVICON -->
+    <div class="section">
+        <h2 class="section-title">Favicon</h2>
+        <div class="grid">
+            <div class="card light">
+                <div class="sizes-row">
+                    <div class="size-item">
+                        <svg width="48" height="48" viewBox="0 0 100 100" fill="none" id="favicon-48">
+                            <rect x="28" y="18" width="60" height="64" rx="16" stroke="#000000" stroke-width="14" fill="none"/>
+                            <path d="M8 50 L22 50" stroke="#000000" stroke-width="10" stroke-linecap="round"/>
+                        </svg>
+                        <span class="card-label">48px</span>
+                    </div>
+                    <div class="size-item">
+                        <svg width="32" height="32" viewBox="0 0 100 100" fill="none" id="favicon-32">
+                            <rect x="28" y="18" width="60" height="64" rx="16" stroke="#000000" stroke-width="14" fill="none"/>
+                            <path d="M8 50 L22 50" stroke="#000000" stroke-width="10" stroke-linecap="round"/>
+                        </svg>
+                        <span class="card-label">32px</span>
+                    </div>
+                    <div class="size-item">
+                        <svg width="16" height="16" viewBox="0 0 100 100" fill="none" id="favicon-16">
+                            <rect x="25" y="15" width="65" height="70" rx="18" stroke="#000000" stroke-width="18" fill="none"/>
+                        </svg>
+                        <span class="card-label">16px</span>
+                    </div>
+                </div>
+                <button class="download-btn" onclick="downloadFavicons()">Download All Favicons</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- SOCIAL MEDIA -->
+    <div class="section">
+        <h2 class="section-title">Social Media</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="logo-box" style="width:200px;height:200px;background:#2563EB;border-radius:50%;display:flex;align-items:center;justify-content:center;">
+                    <svg width="120" height="120" viewBox="0 0 100 100" fill="none" id="social-profile">
+                        <rect x="30" y="20" width="55" height="60" rx="14" stroke="#FFFFFF" stroke-width="8" fill="none"/>
+                        <path d="M15 35 L25 35" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M10 50 L25 50" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M15 65 L25 65" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <span class="card-label">PROFILE (400x400)</span>
+                <button class="download-btn" onclick="downloadSocialProfile()">PNG</button>
+            </div>
+            <div class="card" style="width:320px;">
+                <div class="logo-box" style="width:280px;height:147px;background:linear-gradient(135deg, #1e3a8a 0%, #2563EB 100%);border-radius:12px;display:flex;align-items:center;justify-content:center;" id="og-preview">
+                    <svg width="80" height="80" viewBox="0 0 100 100" fill="none">
+                        <rect x="30" y="20" width="55" height="60" rx="14" stroke="#FFFFFF" stroke-width="8" fill="none"/>
+                        <path d="M15 35 L25 35" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M10 50 L25 50" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M15 65 L25 65" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <span class="card-label">OG IMAGE (1200x630)</span>
+                <button class="download-btn" onclick="downloadOGImage()">PNG</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- BRAND COLORS -->
+    <div class="section">
+        <h2 class="section-title">Brand Colors</h2>
+        <div class="color-info">
+            <div class="color-swatch">
+                <div class="swatch" style="background:#000000;"></div>
+                <div>
+                    <div class="color-text">Primary Black</div>
+                    <div class="color-hex">#000000</div>
+                </div>
+            </div>
+            <div class="color-swatch">
+                <div class="swatch" style="background:#FFFFFF;border:1px solid #27272a;"></div>
+                <div>
+                    <div class="color-text">Primary White</div>
+                    <div class="color-hex">#FFFFFF</div>
+                </div>
+            </div>
+            <div class="color-swatch">
+                <div class="swatch" style="background:#2563EB;"></div>
+                <div>
+                    <div class="color-text">Secondary Blue</div>
+                    <div class="color-hex">#2563EB</div>
+                </div>
+            </div>
+            <div class="color-swatch">
+                <div class="swatch" style="background:#1d4ed8;"></div>
+                <div>
+                    <div class="color-text">Dark Blue</div>
+                    <div class="color-hex">#1D4ED8</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- USAGE GUIDELINES -->
+    <div class="section">
+        <h2 class="section-title">Usage Guidelines</h2>
+        <div class="usage-grid">
+            <div class="usage-card">
+                <div class="usage-title">Clear Space</div>
+                <div class="usage-desc">Maintain minimum clear space equal to the height of the speed lines around the logo.</div>
+            </div>
+            <div class="usage-card">
+                <div class="usage-title">Minimum Size</div>
+                <div class="usage-desc">Do not use the logo smaller than 16px. At 16px, use the simplified favicon version.</div>
+            </div>
+            <div class="usage-card">
+                <div class="usage-title">Background</div>
+                <div class="usage-desc">Use white logo on dark backgrounds. Use black or blue logo on light backgrounds.</div>
+            </div>
+            <div class="usage-card">
+                <div class="usage-title">Don't</div>
+                <div class="usage-desc">Don't rotate, skew, add effects, or change the logo colors outside the brand palette.</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>BlockRun.ai Brand Kit</p>
+        <p style="margin-top:8px;">Speed Block Logo — Primary: #000000 / #FFFFFF — Secondary: #2563EB</p>
+    </footer>
+
+    <script>
+        // Download SVG
+        function downloadSVG(svgId, filename) {
+            const svg = document.getElementById(svgId);
+            const svgData = new XMLSerializer().serializeToString(svg);
+            const blob = new Blob([svgData], {type: 'image/svg+xml'});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename + '.svg';
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        // Download PNG (transparent background)
+        function downloadPNG(svgId, size, filename) {
+            const svg = document.getElementById(svgId);
+            const canvas = document.createElement('canvas');
+            canvas.width = size;
+            canvas.height = size;
+            const ctx = canvas.getContext('2d');
+
+            const svgData = new XMLSerializer().serializeToString(svg);
+            const img = new Image();
+            img.onload = function() {
+                ctx.drawImage(img, 0, 0, size, size);
+                const a = document.createElement('a');
+                a.href = canvas.toDataURL('image/png');
+                a.download = filename + '.png';
+                a.click();
+            };
+            img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgData)));
+        }
+
+        // Download PNG with background
+        function downloadPNGWithBg(svgId, size, filename, bgColor) {
+            const svg = document.getElementById(svgId);
+            const canvas = document.createElement('canvas');
+            canvas.width = size;
+            canvas.height = size;
+            const ctx = canvas.getContext('2d');
+
+            // Fill background
+            ctx.fillStyle = bgColor;
+            ctx.fillRect(0, 0, size, size);
+
+            const svgData = new XMLSerializer().serializeToString(svg);
+            const img = new Image();
+            img.onload = function() {
+                ctx.drawImage(img, 0, 0, size, size);
+                const a = document.createElement('a');
+                a.href = canvas.toDataURL('image/png');
+                a.download = filename + '.png';
+                a.click();
+            };
+            img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgData)));
+        }
+
+        // Download Favicons
+        function downloadFavicons() {
+            downloadPNG('favicon-48', 48, 'favicon-48');
+            setTimeout(() => downloadPNG('favicon-32', 32, 'favicon-32'), 100);
+            setTimeout(() => downloadPNG('favicon-16', 16, 'favicon-16'), 200);
+        }
+
+        // Download Social Profile
+        function downloadSocialProfile() {
+            const size = 400;
+            const canvas = document.createElement('canvas');
+            canvas.width = size;
+            canvas.height = size;
+            const ctx = canvas.getContext('2d');
+
+            // Blue background
+            ctx.fillStyle = '#2563EB';
+            ctx.fillRect(0, 0, size, size);
+
+            // Draw logo centered
+            const svg = document.getElementById('social-profile');
+            const svgData = new XMLSerializer().serializeToString(svg);
+            const img = new Image();
+            img.onload = function() {
+                const logoSize = 240;
+                const offset = (size - logoSize) / 2;
+                ctx.drawImage(img, offset, offset, logoSize, logoSize);
+                const a = document.createElement('a');
+                a.href = canvas.toDataURL('image/png');
+                a.download = 'blockrun-profile-400.png';
+                a.click();
+            };
+            img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgData)));
+        }
+
+        // Download OG Image
+        function downloadOGImage() {
+            const width = 1200;
+            const height = 630;
+            const canvas = document.createElement('canvas');
+            canvas.width = width;
+            canvas.height = height;
+            const ctx = canvas.getContext('2d');
+
+            // Gradient background
+            const gradient = ctx.createLinearGradient(0, 0, width, height);
+            gradient.addColorStop(0, '#1e3a8a');
+            gradient.addColorStop(1, '#2563EB');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, width, height);
+
+            // Draw logo centered
+            const svg = document.getElementById('social-profile');
+            const svgData = new XMLSerializer().serializeToString(svg);
+            const img = new Image();
+            img.onload = function() {
+                const logoSize = 300;
+                const offsetX = (width - logoSize) / 2;
+                const offsetY = (height - logoSize) / 2;
+                ctx.drawImage(img, offsetX, offsetY, logoSize, logoSize);
+                const a = document.createElement('a');
+                a.href = canvas.toDataURL('image/png');
+                a.download = 'blockrun-og-1200x630.png';
+                a.click();
+            };
+            img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgData)));
+        }
+    </script>
+</body>
+</html>
